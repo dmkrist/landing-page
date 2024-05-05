@@ -22,10 +22,10 @@ main, section {
 .container {
     max-width: 1200px;
     width: 80%;
+    margin: 16px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid;
 }
 
 header, .hero, footer {
@@ -36,10 +36,6 @@ header, section, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-header {
-    padding: 16px 0;
 }
 
 logo {
@@ -57,7 +53,6 @@ logo {
 
 .header-link a, .hero p, footer, .image {
     color: #e5e7eb;
-    font-size: 18px;
 }
 
 .main-title {
@@ -73,11 +68,12 @@ logo {
 
 .hero p {
     padding: 12px 0;
+    font-size: 18px;
 }
 
 .image {
     background-color: #696f77;
-    height: 200px;
+    height: 220px;
     margin-left: 20px;
     display: flex;
     justify-content: center;
@@ -90,4 +86,87 @@ button {
     border: 0;
     border-radius: 5px;
     padding: 6px 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.info .container {
+    display: block;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.gallery {
+    margin: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+}
+
+item {
+    width: 120px;
+}
+
+.gallery img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #3882f6;
+    border-radius: 10px;
+    display: block;
+}
+
+item span {
+    font-size: 13px;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.quote .container {
+    flex-direction: column;
+    padding: 48px 64px;
+}
+
+.quote p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.author {
+    align-self: flex-end;
+    font-weight: 600;
+    margin: 0 18px;
+}
+
+.call-to-action .container {
+    justify-content: space-around;
+}
+
+.call-to-action > div {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 36px 0;
+    border-radius: 8px;
+}
+
+h3 {
+    letter-spacing: 1px;
+}
+
+.call-to-action button {
+    border: 1px solid #f9faf8;
+}
+
+footer {
+    padding: 16px 0;
+    font-size: 14px;
+    font-weight: 300;
 }
